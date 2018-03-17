@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ZXing.Net.Mobile.ZXing_Net_Mobile_WindowsUniversal_XamlTypeInfo;
 
 namespace STCCInventoryMock.UWP
 {
@@ -20,7 +21,7 @@ namespace STCCInventoryMock.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            ZXing.Net.Mobile.Forms.WindowsUniversal.ZXingScannerViewRenderer.Init();
             LoadApplication(new STCCInventoryMock.App());
         }
     }

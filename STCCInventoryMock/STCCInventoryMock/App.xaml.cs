@@ -13,7 +13,8 @@ namespace STCCInventoryMock
 		{
 			InitializeComponent();
 
-			MainPage = new STCCInventoryMock.MainPage();
+            //MainPage = new STCCInventoryMock.MainPage();
+            MainPage = new NavigationPage(new ContactPage());
 		}
 
 		protected override void OnStart ()

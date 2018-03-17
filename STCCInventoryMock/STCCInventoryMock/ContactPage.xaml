@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STCCInventoryMock.ContactPage">
+    <StackLayout BackgroundColor="#03A9F4">
+        <Label Text="STCC Inventory"/>
+        <ListView x:Name="listView" ItemSelected="listView_ItemSelected" ItemsSource="{Binding MenuItem}">
+            
+        <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                    <Label Text="{Binding Text}"></Label>    
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+        
+    </StackLayout>    
+    
+    
+</ContentPage>
